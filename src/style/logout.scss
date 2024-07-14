@@ -1,0 +1,70 @@
+
+@import"static.scss";
+.container3{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right, $color2_1, $color2);
+    align-items: center;
+    >.innerBox2{
+        height: 60vh;
+        width: 60%;
+        background-color: $color1;
+        border-radius: 10px;
+        >h1{
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: brown;
+            font-size: 2rem;
+            >span>a {
+            font-weight: bold;
+            // color: #563ea7;
+            color: brown;
+            letter-spacing: 1px;
+            font-size: 2rem;
+            text-decoration: none;
+          }
+        }
+        >.footer2{
+            >center>button {
+                // text-align: center;
+                margin-top: 5rem;
+                outline: none;
+                border: none;
+                background-color: $color2_1;
+                color: #fff;
+                border-radius: 5px;
+                font-weight: bold;
+                font-size: 1rem;
+                padding: 10px 16px;
+                width: 80%;
+                transition: 100ms;
+                cursor: pointer;
+              }
+              >center>button:hover {
+                background-color: #b071da;
+              }
+
+        }
+
+    }
+
+
+}
+
+@media screen and (max-width:620px)
+{
+  .container3{
+    // height: 120vh;
+    >.innerBox2{
+      min-width: 410px;
+      >.heading2{
+        font-size: 3rem;
+      }
+
+    }
+  }
+
+}

@@ -1,0 +1,286 @@
+@import "static.scss";
+
+
+.about2{
+    height: 50vh;
+    
+    display: grid;
+    background-color: $color1;
+    // width: 100%;
+    // justify-content:space-evenly;
+    // justify-items: stretch;
+    // justify-items: center;
+    // position:relative;
+    // justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 20px;
+
+    >.ab_in2{
+        // width: 35vw;
+        padding-right: 20px;
+        margin-top: 20px;
+        >h2{
+            color: $color6;
+            font: 700 2rem normal ;
+        }
+        >.p1{
+            font-weight: 500;
+            color: $color7;
+        }
+        >.p2{
+            font-weight: 500;
+            font-style: $text1;
+        }
+    }
+    
+
+
+}
+
+
+#aSkills{
+    // width: 100%;
+    font-size: 20px;
+    // background-color: rgb(23, 23, 5);
+    // height: 50vh;
+    // margin-left: 40%;
+}
+.Skill_Bar{
+    margin-top: 30px;
+    // width: 45%;
+    height: 15px;
+    // background-color: $color2;
+   
+    position: relative;
+    // background: $color7;
+    background: $color2_1;
+    text-transform: uppercase;
+    border-radius: 1000px;
+    // color:$color4;
+}
+.skill_area{
+    
+    font: 300 12px normal;
+    z-index: 1;
+    position: absolute;
+    margin-top: 2px;
+    margin-left: 15px;
+    color:$color4;
+    text-shadow: none;
+    font-family: $text2;   
+}
+.percentage{
+    z-index: 3;
+    font: 300 12px normal;
+    float: right;
+    margin-right: 15px;
+    margin-top: 2px;
+    color: $color4;
+    text-shadow: none;
+    font-family: $text2; 
+
+}
+#plastic{
+width: 85%;
+animation: animate_plastic 3s;
+height: 15px;
+position: relative;
+border-radius: 1000px;
+background-color: $color7;
+
+}
+@keyframes animate_plastic{
+    from{width: 0px;}
+    to
+    {width: 85%;}
+}
+
+
+
+#wast_p{
+    width: 78%;
+    animation: animate_paper_waste 3s;
+    height: 15px;
+    position: relative;
+    border-radius: 1000px;
+    background-color: $color7;
+    
+    }
+    @keyframes animate_paper_waste{
+        from{width: 0px;}
+        to
+        {width: 78%;}
+    }
+
+
+    #wast_p{
+        width: 78%;
+        animation: animate_paper_waste 3s;
+        height: 15px;
+        position: relative;
+        border-radius: 1000px;
+        background-color: $color7;
+        
+        }
+        @keyframes animate_paper_waste{
+            from{width: 0px;}
+            to
+            {width: 78%;}
+        }
+
+
+        #dump_wast{
+            width: 72%;
+            animation: animate_dump_waste 3s;
+            height: 15px;
+            position: relative;
+            border-radius: 1000px;
+            background-color: $color7;
+            
+            }
+            @keyframes animate_dump_waste{
+                from{width: 0px;}
+                to
+                {width: 72%;}
+            }
+
+
+
+            #orga_wast{
+                width: 80%;
+                animation: animate_orga_wast 3s;
+                height: 15px;
+                position: relative;
+                border-radius: 1000px;
+                background-color: $color7;
+                
+                }
+                @keyframes animate_orga_wast{
+                    from{width: 0px;}
+                    to
+                    {width: 80%;}
+                }
+
+
+                .about3{
+                    height: 100vh;
+                    display: flex;
+                    // flex-direction: row;
+                    // height: 80vh;
+                    background-color: $color1;
+                
+                    >.in_ab1{
+                        // display: flex;
+                        >video{
+                            width: 80%;
+                            
+                        }
+                        >.in_in_ab1{
+                            width: 80%;
+                            // font: 600 1rem solid;
+                            >h3{
+                                font: 500 1.6rem normal;
+                            }
+                            >p{
+                                font: 500 1rem normal;
+                                // overflow-y:inherit;
+                            }
+                        }
+                    }
+                    >.in_ab2{
+                        display: flex;
+                        flex-direction: column;
+                        width: 30%;
+                        >.b1{
+                            font: 700 1.2rem bold;
+                            width: 20rem;
+                            height: 3rem;
+                            background-color: $color7;
+                            margin-top: 2px;
+                            // padding-right: 30px;
+                            margin-bottom: 20px;
+                            margin-right: 10px;
+                
+                            color: $color4;//video title to buttin color
+                            border: 1px solid  $color5;
+                            border-radius: 5px;
+                            display: inline-block;
+                            // text-align: center;
+                            text-decoration: none;
+                          
+                            transition: color1 0.35s ease-out, background-color 0.35s ease-in;
+                            
+                            &:hover,&:focus{
+                                background-color:$color5;
+                                color: $color4;
+                            }
+                        }
+                    }
+                }
+
+
+@media screen and (max-width:720px){
+        .about2{
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            // grid-template-rows: 1rf ;
+
+            >.ab_in2{
+                padding-right: 0;
+                >h2{
+                    text-align: center;
+                }
+                >.p1{
+                    text-align: center;
+
+                }
+                >.p2{
+                    text-align: center;
+                }
+            }
+        }
+
+        
+}
+
+@media screen and (max-width:620px)
+{
+    .about3{
+        height: 110vh;
+        display: flex;
+        flex-direction: column;
+        // width: 100%;
+        >.in_ab1{
+            
+            >video{
+                width: 100%;
+
+            }
+            >.in_in_ab1{
+                width: 100%;
+                // font: 600 1rem solid;
+                >h3{
+                    font: 700 2.5rem bold;
+                    text-align: center;
+                }
+                >p{
+                    font: 500 1.5rem normal;
+                    // overflow-y:inherit;
+                    text-align: center;
+                }
+            }
+        }
+        >.in_ab2{
+            width: 100%;
+            margin-top: 20px;
+            >.b1{
+            //  font-size: 2rem;
+            font: 700 1.9rem bold;
+                width: 100%;
+            }
+        }
+    }
+
+}

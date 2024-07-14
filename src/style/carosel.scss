@@ -1,0 +1,87 @@
+/*carosal ke liye*/
+@import "static";
+/* #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  } */
+  
+  .App{//App_.jsx component
+    background-color: $color1;
+    
+    > h1 {
+      margin: 1rem auto 4rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    height: 100vh;
+  }
+ 
+  
+  
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 320px;
+    // height: 100vh;
+    margin: auto 1rem;
+    text-align: center;
+    font-family: arial;
+    >.product--image {
+      width: 80%;
+      height: 8em;
+      // object-fit: cover;
+      object-fit: contain;
+    }
+    // >.price {
+    //   color: grey;
+    //   font-size: 22px;
+    // }
+
+    >p>button{
+      
+        border: none;
+        outline: 0;
+        padding: 12px;
+        color: white;
+        background-color: #000;
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+        font-size: 18px;
+    
+        &:hover{
+          opacity: 0.7;
+        }
+        >.link{
+          color: #ffff;
+          font:700 1.2rem bold;
+          // text-align: center;
+          padding-left: 30px;
+          padding-top: 5px;
+          &:hover{
+            // border-bottom: 1px solid $color4;
+            // width: 10px;
+            color:#174340;
+            // text-shadow:0.7rem 0.1rem 0.9rem $color4;
+        }
+          
+      }
+      }
+    
+  }
+  a{
+    text-decoration: none;
+}
+  
+  
+  
+  // .card button:hover {
+  //   opacity: 0.7;
+  // }
+  @media screen and (max-width:720px){
+    .App{
+      height: 70vh;
+    }
+  }

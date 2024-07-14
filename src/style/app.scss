@@ -1,0 +1,20 @@
+@import "static.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&family=Roboto+Condensed:ital,wght@0,300;1,400&family=Roboto:wght@100&display=swap');
+
+
+*{//this is common for all the component...this should be use in our every project
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto",sans-serif;//if roboto not work then sans sarif will work
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: $color1;
+    overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
